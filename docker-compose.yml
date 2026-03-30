@@ -16,8 +16,9 @@ version: '3.4' # For compatibility with older Docker versions
 
 services:
   new-api:
-    build: .
+    image: amritazx/new-api:latest
     container_name: new-api
+    pull_policy: always
     restart: always
     command: --log-dir /app/logs
     ports:
