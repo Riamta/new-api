@@ -85,7 +85,7 @@ const ModelHeader = ({ modelData, vendorsMap = {}, t }) => {
           }}
         >
           <span className='truncate max-w-60 font-bold'>
-            {modelData?.model_name || t('未知模型')}
+            {modelData?.display_name || modelData?.model_name || t('未知模型')}
           </span>
         </Paragraph>
       </div>

@@ -299,6 +299,15 @@ export const getModelsColumns = ({
       ),
     },
     {
+      title: t('显示名称'),
+      dataIndex: 'display_name',
+      render: (text, record) => (
+        <Text>
+          {text || '-'}
+        </Text>
+      ),
+    },
+    {
       title: t('匹配类型'),
       dataIndex: 'name_rule',
       render: (val, record) => renderNameRule(val, record, t),

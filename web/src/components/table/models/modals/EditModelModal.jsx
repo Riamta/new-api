@@ -312,6 +312,15 @@ const EditModelModal = (props) => {
                   </Col>
 
                   <Col span={24}>
+                    <Form.Input
+                      field='display_name'
+                      label={t('显示名称')}
+                      placeholder={t('请输入显示名称（可选），如：GPT-4')}
+                      showClear
+                    />
+                  </Col>
+
+                  <Col span={24}>
                     <Form.Select
                       field='name_rule'
                       label={t('名称匹配类型')}
